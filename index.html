@@ -4,8 +4,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NailsRussia</title>
+    <script></script>
 </head>
 <body>
-    <b>Hello from Tanya</b>
+    <div class="main">
+        <button class="whatsapp__button" onclick="goToWhatsApp()">WhatsApp</button>
+    </div>
 </body>
 </html>
+
+<style>
+    .whatsapp__button {
+        background-color: #F4F1DE;
+        width: 200px;
+        height: 40px;
+        border-radius: 10px;
+        cursor: pointer;
+    }
+    .main {
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+</style>
+
+<script>
+    function goToWhatsApp() {
+        window.open('https://wa.me/79102960055', '_blank').focus();
+    }
+</script>
