@@ -8,13 +8,17 @@
 </head>
 <body>
     <div class="main">
-        <button class="whatsapp__button" onclick="goToWhatsApp()">WhatsApp</button>
+        <div class="main_links">
+            <button class="link__button" onclick="goToWhatsApp()">WhatsApp</button>
+            <button class="link__button" onclick="goToTelegram()">Telegram</button>
+            <button class="link__button" onclick="goToVk()">Vkontakte</button>
+        </div>
     </div>
 </body>
 </html>
 
 <style>
-    .whatsapp__button {
+    .link__button {
         background-color: #F4F1DE;
         width: 200px;
         height: 40px;
@@ -27,10 +31,20 @@
         align-items: center;
         justify-content: center;
     }
+    .main_links {
+        display: grid;
+        grid-gap: 20px;
+    }
 </style>
 
 <script>
     function goToWhatsApp() {
         window.open('https://wa.me/79102960055', '_blank').focus();
+    }
+    function goToTelegram() {
+        window.open('https://t.me/tanyakurbat', '_blank').focus();
+    }
+    function goToVk() {
+        window.open('https://vk.com/tanyakurbat_nails', '_blank').focus();
     }
 </script>
